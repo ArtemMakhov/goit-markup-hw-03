@@ -26,16 +26,14 @@ body {
 }
 .container {
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
   outline: 2px solid tomato;
 }
-button {
-  font-family: inherit;
-  cursor: pointer;
-}
 
-ul {
+.list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 /* Logo */
@@ -90,7 +88,7 @@ ul {
 .auth-nav .link:focus {
   color: var(--accent-color);
 }
-.header {
+.page-header {
   background-color: var(--primary-white-color);
 }
 /*ГЕРОЙ*/
@@ -99,8 +97,9 @@ ul {
   background-color: var(--background-color-footer);
 }
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 40px;
   color: var(--primary-white-color);
-
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -108,8 +107,11 @@ ul {
   letter-spacing: 0.06em;
 }
 .hero .hero-button {
+  padding: 10px 32px;
+  border-radius: 4px;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   font-weight: 700;
   font-size: 16px;
@@ -118,10 +120,23 @@ ul {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+
+  font-family: inherit;
+  cursor: pointer;
 }
 
 /* основной контент */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.works-section {
+  padding-top: 0;
+  padding-bottom: 94px;
+}
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   color: var(--title-color);
 
   font-weight: 700;
@@ -132,6 +147,8 @@ ul {
 .team-title,
 .advantages-title,
 .title-portfolio {
+  margin-top: 0;
+  margin-bottom: 10px;
   color: var(--title-color);
 
   font-weight: 700;
@@ -142,6 +159,8 @@ ul {
   text-transform: uppercase;
 }
 .advantages-text {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 1.71;
 }
@@ -154,6 +173,8 @@ ul {
   background-color: var(--background-color-command);
 }
 .team-text {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.18;
 }
@@ -178,12 +199,18 @@ ul {
 }
 /* Кнопки портфолио */
 .filter-button {
+  font-family: inherit;
+  cursor: pointer;
+  padding: 6px 22px;
+  margin-bottom: 50px;
+
   color: var(--title-color);
   background-color: var(--background-color-command);
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  border-radius: 4px;
 
   text-align: center;
   letter-spacing: 0.03em;
@@ -194,12 +221,16 @@ ul {
   background-color: var(--accent-color);
 }
 .title-portfolio {
+  margin-top: 0;
+  margin-bottom: 4px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
 .text-portfolio {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 16px;
   line-height: 1.87;
   color: var(--primary-text-color);
