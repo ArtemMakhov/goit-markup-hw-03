@@ -54,8 +54,10 @@ body {
   color: var(--accent-color);
 }
 .logo-footer {
-  color: var(--primary-white-color);
+  display: inline-block;
+  margin-bottom: 20px;
 
+  color: var(--primary-white-color);
   font-family: Raleway, cursive;
   font-weight: 700;
   font-size: 26px;
@@ -181,6 +183,9 @@ body {
   font-size: 14px;
   line-height: 1.14;
 }
+.advantages-list {
+  display: flex;
+}
 .advantages-title {
   text-transform: uppercase;
 }
@@ -205,8 +210,16 @@ body {
   line-height: 1.18;
 }
 /* Footer  */
+.main-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .add {
   font-style: normal;
+}
+.add > .item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .add .link {
   color: rgba(255, 255, 255, 0.6);
