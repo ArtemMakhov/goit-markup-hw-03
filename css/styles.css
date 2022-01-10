@@ -15,6 +15,8 @@
   --logo-black-color: #000000;
   --background-color-command: #f5f4fa;
   --background-color-footer: #2f303a;
+  --box-shadow-color: #0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 body {
   margin: 0;
@@ -23,6 +25,11 @@ body {
 
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 .container {
   margin-left: auto;
@@ -186,6 +193,14 @@ body {
 .advantages-list {
   display: flex;
 }
+.advantages-list > .item {
+  flex-basis: calc(100% / 3);
+}
+
+.advantages-list > .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .advantages-title {
   text-transform: uppercase;
 }
@@ -194,6 +209,18 @@ body {
   margin-bottom: 0;
   font-size: 14px;
   line-height: 1.71;
+  height: 75px;
+}
+/* WORKS */
+.works-list {
+  display: flex;
+}
+/* TEAM */
+.team-list .item * {
+  outline: 1px solid tomato;
+}
+.team-list {
+  display: flex;
 }
 .team-title {
   font-weight: 500;
@@ -205,9 +232,15 @@ body {
 }
 .team-text {
   margin-top: 0;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   font-size: 16px;
   line-height: 1.18;
+}
+.card {
+  box-sizing: var(--box-shadow-color);
+}
+.card-team {
+  padding: 30px;
 }
 /* Footer  */
 .main-footer {
@@ -237,6 +270,13 @@ body {
   background-color: var(--background-color-footer);
 }
 /* Кнопки портфолио */
+.filter {
+  display: flex;
+  justify-content: center;
+}
+.filter > .item:not(:last-child) {
+  margin-right: 8px;
+}
 .filter-button {
   font-family: inherit;
   cursor: pointer;
