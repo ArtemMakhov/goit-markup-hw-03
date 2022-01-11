@@ -191,17 +191,6 @@ img {
   font-size: 14px;
   line-height: 1.14;
 }
-/* Скрытые заголовки */
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  …
-}
-/* advantages */
-
 .advantages-list {
   display: flex;
 }
@@ -226,9 +215,7 @@ img {
 /* WORKS */
 .works-list {
   display: flex;
-  justify-content: space-between;
 }
-
 /* TEAM */
 .team-list .item * {
   outline: 1px solid tomato;
@@ -329,8 +316,7 @@ img {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.card {
-}
+
 .card-content {
   padding: 20px 24px;
   border: 1px solid var(--border-portfolio-color);
