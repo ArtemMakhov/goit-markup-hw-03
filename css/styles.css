@@ -237,12 +237,7 @@ img {
   font-size: 16px;
   line-height: 1.18;
 }
-.card {
-  box-sizing: var(--box-shadow-color);
-}
-.card-team {
-  padding: 30px;
-}
+
 /* Footer  */
 .main-footer {
   padding-top: 60px;
@@ -311,7 +306,7 @@ img {
 .exemples-list > .item {
   /* outline: 1px solid teal; */
 
-  flex-basis: calc(100% / 3 -30px);
+  /* flex-basis: calc(100% / 3 -30px); */
 
   margin-right: 30px;
   margin-bottom: 30px;
