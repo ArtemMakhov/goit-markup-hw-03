@@ -195,7 +195,7 @@ img {
   display: flex;
 }
 .advantages-list > .item {
-  flex-basis: calc(100% / 3);
+  flex-basis: calc(100% / 4);
 }
 
 .advantages-list > .item:not(:last-child) {
@@ -215,6 +215,7 @@ img {
 /* WORKS */
 .works-list {
   display: flex;
+  justify-content: space-between;
 }
 /* TEAM */
 .team-list .item * {
